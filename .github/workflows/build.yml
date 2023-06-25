@@ -1,7 +1,7 @@
 # This workflow will build a Java project with Gradle
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 
-name: Build 1.17
+name: Build
 
 on: [push, pull_request]
 
@@ -25,7 +25,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build --stacktrace
-    - name: Upload artifacts to Github Actions  
+    - name: Upload artifacts to Github Actions
       uses: actions/upload-artifact@v2
       with:
         name: Compiled artifacts

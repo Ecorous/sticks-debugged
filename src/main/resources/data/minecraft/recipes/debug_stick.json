@@ -1,11 +1,14 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:stick"
-  },
-  "addition": {
-    "item": "minecraft:diamond_block"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
   "result": {
     "item": "minecraft:debug_stick"
   }

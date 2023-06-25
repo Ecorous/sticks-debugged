@@ -1,0 +1,39 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "org.ecorous",
+		"id": "sticksdebugged",
+		"version": "${version}",
+		"metadata": {
+			"name": "sticksdebugged",
+			"description": "A short description of your mod.",
+			"contributors": {
+				"Your name here": "Owner"
+			},
+			"contact": {
+				"issues": "https://github.com/Ecorous/sticks-debugged/issues",
+				"sources": "https://github.com/Ecorous/sticks-debugged"
+			},
+			"icon": "assets/sticks_debugged/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "org.ecorous.sticksdebugged.SticksDebugged"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.1"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": "*"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.17.1"
+			}
+		]
+	},
+	"mixin": "sticksdebugged.mixins.json"
+}
